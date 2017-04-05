@@ -1,8 +1,8 @@
 <div class="me-login">
 	<button ng-hide="flag" class="gologin"><a ui-sref="login">去登录</a></button>
 	<img src="{{data.image}}" ng-hide="flag1">
-	<h3 ng-bind="phone" ng-hide="flag1" ></h3>
-	<!-- <h3 ng-bind="data.name" ng-hide="flag1" ></h3> -->
+	<!-- <h3 ng-bind="phone" ng-hide="flag1" ></h3> -->
+	<h3 ng-bind="data.name" ng-hide="flag1" ></h3>
 	<div>
 		<button ng-hide="flag1" ui-sref="deliver">投递</button>
 		<button ng-hide="flag1" ui-sref="collect">收藏</button>

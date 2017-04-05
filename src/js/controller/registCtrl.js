@@ -16,8 +16,9 @@ angular.module('app').controller('registCtrl', ['$scope','$http','$interval','$c
 	};
 	
 	$scope.checkRegistPassword=function(){
-		var reg=/^[\w]{6,12}$/;
-		if(reg.test($scope.repassword)){
+		// var reg=/^(\w){6,20}$/;
+		var reg=/^[a-zA-Z0-9]{6,10}$/;
+		if($scope.repassword!=undefined && reg.test($scope.repassword)){
 			$scope.checkpassword="✅";
 			$scope.flag2=true;
 		}else{
@@ -46,11 +47,11 @@ angular.module('app').controller('registCtrl', ['$scope','$http','$interval','$c
 	}
 	
 	$scope.checkRegist=function(){
-		console.log(22);
-		if($scope.flag1 && $scope.flag2){
-			console.log(33);
+		if($scope.flag1 && $scope.flag2 &&$scope.num!=null && $scope.num==$scope.code){
 			$cookies.putObject('register',{phone:$scope.rephone,password:$scope.repassword});
-			// $state.go='login';
+			$state.go('login');
+		}else{
+			$scope.code="注册失败";
 		}
 	}
 	
