@@ -1,0 +1,31 @@
+<div class="company-classify" ng-controller="showCtrl">
+    <h2>职位分类</h2>
+    <!-- <ul>
+		<li ng-repeat="v in company.positionClass">
+			{{v.name}}
+			<div ng-repeat="value in v.positionList">
+				<p>{{value.name}}</p>
+				<p>{{value.createdDate}}</p>
+			</div>
+		</li>
+	</ul>-->
+    <div class="btn">
+        <button ng-bind="company.positionClass[0].name" ng-click="doChange1()" ng-style="btn1" class="on"></button>
+        <button ng-bind="company.positionClass[1].name" ng-click="doChange2()" ng-style="btn2"></button>
+    </div>
+    <div ng-hide="flag1">
+        <div>
+        	<p ng-bind="company.positionClass[1].positionList[0].name"></p>
+        	<p ng-bind="company.positionClass[1].positionList[0].createdDate"></p>
+        </div>
+        <h5 ng-bind="company.positionClass[1].positionList[0].salary"></h5>
+    </div>
+    <div ng-hide="flag2">
+        <div>
+        	<p ng-bind="company.positionClass[0].positionList[0].name"></p>
+        	<p ng-bind="company.positionClass[0].positionList[0].createdDate"></p>
+        </div>
+        <h5 ng-bind="company.positionClass[0].positionList[0].salary"></h5>
+    </div>
+    
+</div>

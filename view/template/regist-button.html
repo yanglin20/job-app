@@ -1,0 +1,28 @@
+<div class="regist login" ng-controller="registCtrl">
+	<div class="inpu2">
+		<ul>
+			<li><i class="iconfont icon-wode"></i></li>
+			<li><input type="text" placeholder="请输入你的手机号" ng-blur="checkRegistPhone()" ng-model="rephone"><span ng-bind="checkphone"></span>
+			</li>
+		</ul>
+		<ul>
+			<li><i class="iconfont icon-mima"></i></li>
+			<li><input type="text" ng-model="repassword" ng-blur="checkRegistPassword()"  placeholder="请输入6-12位的密码"><span ng-bind="checkpassword"></span>
+			</li>
+		</ul>
+	</div>
+
+	<ul class="regist-test">
+		<li><input type="text" ng-model="num" placeholder="输入验证码"></li>
+		<li><button ng-click="sendCode()" ng-bind="sendtxt" ng-disabled="{{dis}}"> </button></li>
+		<li ng-bind="code"></li>
+	</ul>
+		<!-- <p ng-bind="code"></p> -->
+	
+
+
+	<div class="login-button">
+		<button ui-sref="login">登录</button>
+		<button ui-sref="regist" ng-click="checkRegist()">注册</button>
+	</div>
+</div>

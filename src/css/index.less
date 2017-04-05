@@ -1,0 +1,413 @@
+@fontsize: 0.32rem;
+@bgcolor: #12d5b5;
+@hcolor:#def8f5;
+*{
+    overflow: hidden;
+}
+
+@import "login";
+@import "regist";
+
+.f-on{
+    background-color : #dbf9f4;
+}
+.header {
+    width: 100%;
+    height: 0.8rem;
+    background-color: @bgcolor;
+    color: #fff;
+    font-size: @fontsize;
+    line-height: 0.4rem;
+    margin: 0 auto;
+    h2 {
+        display: inline-block;
+        padding: 0.2rem;
+    }
+    button {
+        background-color: #feae11;
+        color: #fff;
+        width: 1.4rem;
+        height: 0.4rem;
+        font-size: @fontsize;
+        line-height: 0.4rem;
+        float: right;
+        margin: 0.2rem;
+        a {
+            color: #fff;
+        }
+    }
+    p{
+        float: right;
+        line-height: 0.8rem;
+        margin-right: 0.2rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    height: 0.8rem;
+    text-align: center;
+    line-height: 0.8rem;
+    position: fixed;
+    bottom: 0px;
+    background-color: #fff;
+    border-top: 1px solid #d4d4d4;
+    ul {
+        display: flex;
+        justify-content:space-around;
+        li {
+            height: 0.8rem;
+            width: 33.33%;
+            a {
+                color: #898585;
+                font-size: @fontsize;
+            }
+            i {
+                color: #898585;
+                font-size: @fontsize;
+            }
+        }
+
+    }
+}
+
+.contain {
+    ul {
+        background-color: #fff;
+        li {
+            width: 100%;
+            padding: 0.2rem 0.1rem;
+            border-bottom: 1px solid #d4d4d4;
+            img {
+                width: 1.2rem;
+                height: 1.2rem;
+                vertical-align: middle;
+            }
+            div {
+                width: 80%;
+                display: inline-block;
+                margin-left: 0.2rem;
+                vertical-align: middle;
+                h2 {
+                    font-size: @fontsize;
+                }
+                p:first-of-type {
+                    color: #ff0000;
+                    font-size: 0.25rem;
+                }
+                p:last-of-type {
+                    font-size: 0.25rem;
+                }
+            }
+        }
+    }
+}
+
+// 职位介绍show页面
+.position-header {
+    text-align: center;
+    line-height: 0.8rem;
+    a {
+        color: #fff;
+        float: left;
+        margin-left: 0.2rem;
+    }
+}
+
+.position-footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 0.8rem;
+    background-color: @bgcolor;
+    color: #fff;
+    font-size: @fontsize;
+    text-align: center;
+    line-height: 0.8rem;
+}
+
+.position-contain {
+    height: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    .position-contain1 {
+        float: left;
+        padding: 0.4rem 0.2rem;
+        
+        p {
+            font-size: @fontsize;
+            line-height: 0.6rem;
+            span {
+                color: #ff0000;
+            }
+        }
+    }
+    .star{
+        float: right;
+        margin-top: 0.7rem;
+        margin-right: 0.2rem;
+    }
+}
+
+.position-info{
+    background-color: #fff;
+    padding: 0.4rem 0.1rem;
+    
+    img {
+        width: 1.2rem;
+        height: 1.2rem;
+        vertical-align: middle;
+    }
+    div {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.2rem;
+        p {
+            font-size: 0.3rem;
+            margin-bottom: 0.1rem;
+        }
+    }
+}
+
+.position-contain3 {
+        background-color: #fff;
+        margin-top: 0.2rem;
+        h3 {
+            font-size: 0.4rem;
+            color: #000;
+            padding: 0.2rem;
+            border-bottom: 1px solid #ccc;
+        }
+        pre {
+            padding: 0.4rem 0 0.2rem 0.2rem;
+            font-size: @fontsize;
+        }
+}
+
+.company-classify{
+	background-color: #fff;
+	border-top:1px solid #ccc;
+	padding: 0.3rem 0 0.1rem 0.2rem;
+	h2{
+		font-size: @fontsize;
+		color: #000;
+	}
+	.btn{
+		width: 100%;
+		border-bottom :1px solid #ccc;
+		padding-bottom: 0.1rem;
+		margin-bottom: 0.3rem;
+		button{
+			width: 1.4rem;
+			height: 0.7rem;
+			background-color: @hcolor;
+			border-radius: 0.4rem;
+			text-align: center;
+			line-height: 0.6rem;
+			color: #000;
+			margin: 0.4rem 0.2rem 0 0;	
+			font-size: 0.3rem;
+		}
+		.on{
+			color : #fff;
+	    	background-color : #12d5b5;
+		}
+	}
+	
+	
+	div{
+		div{
+			display: inline-block;
+			p{
+				font-size: @fontsize;
+				line-height: 0.7rem;
+				color: #000;
+			}
+		}
+		h5{
+			float: right;
+			margin-right: 0.4rem;
+			color: #f00;
+			font-size: @fontsize;
+			line-height: 1.2rem;
+		}
+	}
+}
+
+//search页面
+.search-header{
+    text-align: center;
+    line-height: 0.8rem;
+    input{
+        width: 4.0rem;
+        height: 0.5rem;
+        font-size: @fontsize;
+        padding-left: 0.2rem;
+        border-radius: 0.3rem;
+        margin: 0 0.2rem;
+    }
+    span:last-child{
+        color: #8c8888;
+    }
+}
+
+.search-search{
+    ul{
+        width: 100%;
+        height: 0.8rem;
+        line-height: 0.8rem;
+        display: flex;
+        justify-content:space-around;
+        font-size: @fontsize;
+        color: #000;
+        text-align: center;
+        li{
+            width: 33.33%;
+        }
+    }
+}
+
+.bg-search{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0.3;
+    background-color: #000;   
+}
+.search-city{
+        width: 95%;
+        height: auto;
+        position: fixed;
+        z-index: 200;
+        left: 2.5%;
+        bottom: 0.2rem;
+        
+        ul{
+            background-color: #f1f2f3;
+            border-radius: 0.1rem;
+            margin-bottom: 0.2rem;
+            li{
+                height: 1rem;
+                border-bottom: 1px solid #bfbfbf;
+                line-height: 1rem;
+                text-align: center;
+                color: #1079e8;
+                font-size: @fontsize;
+            }
+        }
+        button{
+            width: 100%;
+            line-height: 1rem;
+            border-radius: 0.1rem;
+            color: #1079e8;
+            font-size: @fontsize;
+            background-color: #f1f2f3;
+        }
+}
+
+//me
+.me-login{
+    text-align: center;
+    .gologin{
+        width: 90%;
+        line-height: 0.8rem;
+        position: absolute;
+        top: 50%;
+        margin-top: -0.4rem;
+        left: 5%;
+        text-align: center;
+        background-color: @bgcolor;
+        a{
+            color: #333;
+            font-size: @fontsize;
+        }
+    }
+
+    h3{
+        font-size:  @fontsize;
+        line-height: 2rem;
+        color: #000;
+        text-align: center;
+    }
+    img{
+        margin-top: 30%;
+    }
+    div{
+        width: 80%;
+        display: flex;
+        justify-content:space-around;
+        margin: 0 auto;
+       
+        button{
+            font-size:  0.4rem;
+            width: 3rem;
+            height: 1.8rem;
+            background-color: @bgcolor;
+            color: #fff;
+            text-align: center;
+        }
+        button:first-child{
+            margin-right: 0.2rem;
+        }
+        button:last-child{
+            margin-left: 0.2rem;
+        }
+    }
+    .mbtn{
+        width: 85%;
+        margin-top: 0.4rem;
+
+        line-height: 0.8rem;
+        text-align: center;
+        background-color: red;
+        color:#fff;
+        font-size: 0.4rem;
+        
+    }
+    
+}
+
+//collect
+.collect{
+    .collect-ul{
+         ul li div {
+            width: auto;
+        }
+        ul{
+            li{
+                div:first-child{
+                    float: left;
+                }
+
+                .star{
+                    width: 0.43rem;
+                    height: 0.43rem;
+                    float: right;
+                    margin-right: 0.4rem;
+                    margin-top: 0.4rem;
+                }
+
+              
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+@bgcolor: #12d5b5;
+.login{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../images/background.png");
+    background-size: 100%;
+    
+
+    .inpu1{
+        margin-top: 50%;
+        margin-bottom: 0.5rem;
+        span{
+                margin-left: -0.6rem;
+            }
+    }
+    
+    div:first-child{
+        
+        ul{
+            width: 80%;
+            margin: 0 auto;
+            &:first-of-type{
+                border-bottom: 1px solid #fff;
+            }
+            li:first-child{
+                float: left;
+                width: 20%;
+                height: 0.8rem;
+                text-align: center;
+                line-height: 0.8rem;
+                background: rgba(0,0,0,0.5);
+                i{
+                    font-size: 0.4rem;
+                    color: #fff;
+                }
+                
+            }
+            li:last-child{
+                
+                input{
+                    background: rgba(0,0,0,0.3);
+                    width: 100%;
+                    height: 0.8rem;
+                    line-height: 0.8rem;
+                    font-size: 0.32rem;
+                    padding-left: 0.4rem;
+                    color:#fff;
+                }
+            }
+            
+            ::-webkit-input-placeholder { /* WebKit browsers */ 
+                color: #fff; 
+            } 
+            ::-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+                color: #fff; 
+            } 
+           
+        }
+    }
+
+
+    .checklogin{
+        width: 100%;
+        height: 0.4rem;
+        line-height: 0.4rem;
+        color: red;
+       text-align: center;
+       margin: 0.25rem 0;
+       
+    }
+
+    .login-button{
+        text-align: center;
+        button{
+            width: 80%;
+            height: 0.8rem;
+            border-radius: 0.1rem;
+            margin-bottom: 0.2rem;
+            font-size: 0.4rem;
+            border: 1px solid @bgcolor;
+            &:first-child{
+                background-color:@bgcolor;
+                color: #fff;
+            }
+            &:last-child{
+                background-color:rgba(18,213,181,0.3);
+                color: @bgcolor;
+            }
+        }
+    }
+}

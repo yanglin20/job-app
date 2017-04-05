@@ -1,0 +1,33 @@
+<div class="contain">
+    <ul ng-hide="flag">
+        <li ng-repeat="(key, value) in data" ui-sref="show({id:value.id})">
+            <img ng-src="{{value.imageUrl}}" alt="">
+            <div>
+                <h2>{{value.companyName}} <span>[{{value.cityName}}]</span> {{value.industryName}}&nbsp;&nbsp;{{value.scaleName}}</h2>
+                <p>{{value.salaryName}}</p>
+                <p>{{value.date}}</p>
+            </div>
+        </li>
+    </ul>
+    <ul ng-hide="flag1">
+        <li>
+            <img ng-src="{{data.imageUrl}}" alt="">
+            <div>
+                <h2>{{data.companyName}} <span>[{{data.cityName}}]</span> {{data.industryName}}&nbsp;&nbsp;{{data.scaleName}}</h2>
+                <p>{{data.salaryName}}</p>
+                <p>{{data.date}}</p>
+            </div>
+        </li>
+    </ul>
+
+    <ul ng-hide="flag2">
+        <li>
+            <img ng-src="{{data.imageUrl}}" alt="">
+            <div>
+                <h2>{{data.companyName}} <span>[{{data.cityName}}]</span> {{data.industryName}}&nbsp;&nbsp;{{data.scaleName}}</h2>
+                <p>{{data.salaryName}}</p>
+                <p>{{data.date}}</p>
+            </div>
+        </li>
+    </ul>
+</div>

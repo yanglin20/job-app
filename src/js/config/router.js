@@ -1,0 +1,52 @@
+'use strict';
+angular.module('app').config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+	$stateProvider
+		.state('main',{
+			url:'/main',
+			templateUrl:'view/main.html',
+			controller:'mainCtrl'
+		})
+		.state('show',{
+			url:'/show/:id',
+			templateUrl:'view/show.html',
+			controller:'showCtrl'
+		})
+		.state('company',{
+			url:'/company/:id',
+			templateUrl:'view/company.html',
+			controller:'showCtrl'
+		})
+		.state('search',{
+			url:'/search',
+			templateUrl:'view/search.html',
+			controller:'searCtrl'
+		})
+		.state('me',{
+			url:'/me',
+			templateUrl:'view/me.html',
+			controller:'meCtrl'
+		})
+		.state('login',{
+			url:'/login',
+			templateUrl:'view/login.html',
+			controller:'loginCtrl'
+		})
+		.state('regist',{
+			url:'/regist',
+			templateUrl:'view/regist.html',
+			controller:'registCtrl'
+		})
+		.state('deliver',{
+			url:'/deliver',
+			templateUrl:'view/deliver.html',
+			controller:'deliverCtrl'
+		})
+		.state('collect',{
+			url:'/collect',
+			templateUrl:'view/collect.html',
+			controller:'collectCtrl'
+		});
+
+
+	$urlRouterProvider.otherwise('main');	
+}])
